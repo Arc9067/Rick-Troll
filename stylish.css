@@ -23,7 +23,7 @@ body {
   position: fixed;
   background-color: white;
   z-index: 10;
-  opacity: 0.8;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
