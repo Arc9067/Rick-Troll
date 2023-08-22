@@ -1,0 +1,18 @@
+body {
+  position: relative;
+}
+
+.spec {
+  width: 12rem;
+  position: absolute;
+}
+
+.right {
+  right: 0;
+  bottom: -33px;
+}
+
+.left {
+  left: 0;
+  bottom: -33px;
+}
