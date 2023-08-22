@@ -1,0 +1,160 @@
+<html lang="en" dir="ltr">
+  <head>
+    <title>Rick Troll</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+    <link href="/dialog-polyfill.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="/stylish.css" rel="stylesheet" />
+    <style media="screen">
+      html,
+      body,
+      pre,
+      code,
+      kbd,
+      samp {
+        font-family: "Press Start 2P", verdana, sans-serif;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        background: url(bg.jpg) repeat;
+        background-attachment: fixed;
+        text-align: center;
+      }
+      .container {
+        width: 50%;
+        padding: 20px;
+        margin: 0 auto 0;
+        text-align: center;
+      }
+      .rollin {
+        background: white;
+      }
+      #themanhimself {
+        display: inline-block;
+        margin-bottom: -20px;
+        max-width: 100%;
+      }
+      #thinking-rick {
+        width: 100%;
+        max-width: 100%;
+      }
+      .nes-btn {
+        width: calc(100% - 8px);
+      }
+      .about {
+        margin-top: 20px !important;
+      }
+      .fricks {
+        margin-top: 20px !important;
+      }
+      .video-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+      .video-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      #rolloverload {
+        padding: 10px 15px;
+        background: #e76e55;
+        text-align: center;
+      }
+      @media (max-width: 800px) {
+        .container {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <script src="https://unpkg.com/jquery@3.2.0/dist/jquery.min.js"></script>
+    <script src="dialog-polyfill.js"></script>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1120.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <!-- Dialog Ohno-->
+    <!-- <section>
+      <dialog class="nes-dialog is-rounded" id="dialog-nomas">
+        <form method="dialog">
+          <p>
+            UPDATE: I've been notified (very kindly, I might add) that my
+            rolling service is in violation of Zoom's terms of service, and
+            therefore, I must immediately quit with the Zoom Rickrolls. The
+            smiles that I brought were priceless, and your enthusiasm for my
+            work is something I'll cherish forever. So, with that, I have let
+            you down. However, I'm never gonna give you up. We will meet again,
+            when you least expect it. - Love, Rick
+          </p>
+          <button class="nes-btn is-primary is-error">
+            That's all, folks!
+          </button>
+        </form>
+      </dialog>
+    </section> -->
+
+    <div class="container">
+      <img id="themanhimself" src="rick.gif" />
+      <div class="nes-container is-rounded rollin is-centered">
+        <div id="main">
+          <h3>RickTroll Your Dream</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+            sapiente harum modi soluta qui sed adipisci dolorum ipsam ratione
+            nulla?
+          </p>
+          <div class="nes-field">
+            <input
+              type="text"
+              id="invite_link"
+              class="nes-input"
+              placeholder="eg: https://zoom.us/i/1937...and so on"
+            /><br />
+            <button type="button" class="invite_btn nes-btn is-warning">
+              Invite Rick
+            </button>
+          </div>
+        </div>
+
+        <div id="much-thinking" style="display: none">
+          <img src="rickisthinking.gif" id="thinking-rick " />
+        </div>
+        <div id="much-success" style="display: none">
+          <p id="much-success-message"></p>
+          <div class="progress" style="display: none">
+            <progress
+              id="much-success-progress"
+              class="nes-progress is-success"
+              value="0"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript"></script>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
