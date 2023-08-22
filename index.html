@@ -95,8 +95,12 @@
     <!-- Dialog Ohno-->
 
     <section id="loader">
-      <button type="button" class="invite_btn nes-btn is-warning max">
-        Invite Rick
+      <button
+        id="playIt"
+        type="button"
+        class="invite_btn nes-btn is-warning max"
+      >
+        Yes Join
       </button>
     </section>
     <section>
@@ -164,6 +168,15 @@
       <h1>Scan Me</h1>
     </div>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      const playIt = document.getElementById("playIt");
+      const loaderDiv = document.getElementById("loader");
+
+      playIt.addEventListener("click", async () => {
+        const audio = await new Audio("/audio.mp3");
+        await audio.play();
+        loaderDiv.style.display = "none";
+      });
+    </script>
   </body>
 </html>
