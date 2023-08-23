@@ -63,3 +63,20 @@ body {
 video {
   max-width: 90%;
 }
+
+.special {
+  background-color: #f7d51d;
+  box-shadow: 0 0.5em #f7d51d, 0 -0.5em #f7d51d, 0.5em 0 #f7d51d,
+    -0.5em 0 #f7d51d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
