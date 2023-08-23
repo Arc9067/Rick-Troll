@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/22d9f2c7a2.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="/stylish.css" rel="stylesheet" />
     <style media="screen">
       html,
@@ -168,6 +172,57 @@
       <img src="./qr.png" alt="" style="width: 10rem" />
       <br /><br />
       <h1>Scan Me</h1>
+    </div>
+
+    <div class="container">
+      <img id="themanhimself" src="logo.webp" />
+      <div class="nes-container is-rounded rollin is-centered">
+        <div id="main">
+          <h2>Tokenomics</h2>
+          <br /><br />
+          <h4><strong>Tax:</strong> 1/1</h4>
+          <h4><strong>Supply:</strong> 420,000,000</h4>
+          <h4><strong>Max Txn:</strong> 2%</h4>
+          <div class="nes-field">
+            <input
+              type="text"
+              id="invite_link"
+              class="nes-input"
+              placeholder="eg: https://zoom.us/i/1937...and so on"
+            /><br />
+            <button
+              id="playVideo"
+              type="button"
+              class="invite_btn nes-btn is-warning"
+            >
+              <a href="" style="color: black; font-size: 32px"
+                ><i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="" style="color: black; font-size: 32px"
+                ><i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="" style="color: black; font-size: 32px"
+                ><i class="bi bi-bar-chart-fill"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div id="much-thinking" style="display: none">
+          <img src="rickisthinking.gif" id="thinking-rick " />
+        </div>
+        <div id="much-success" style="display: none">
+          <p id="much-success-message"></p>
+          <div class="progress" style="display: none">
+            <progress
+              id="much-success-progress"
+              class="nes-progress is-success"
+              value="0"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript">
