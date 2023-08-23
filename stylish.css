@@ -36,3 +36,26 @@ body {
 #playIt {
   color: white;
 }
+
+#video {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 20;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  scale: 0;
+  transition: 0.8;
+}
+
+.fullScale {
+  scale: 1 !important;
+}
+
+video {
+  max-width: 90%;
+}

@@ -88,12 +88,12 @@
     <script src="https://unpkg.com/jquery@3.2.0/dist/jquery.min.js"></script>
     <script src="dialog-polyfill.js"></script>
   </head>
-  <body
-    data-new-gr-c-s-check-loaded="14.1120.0"
-    data-gr-ext-installed=""
-    cz-shortcut-listen="true"
-  >
+  <body>
     <!-- Dialog Ohno-->
+
+    <section id="video">
+      <video src="./video.mp4" id="videD"></video>
+    </section>
 
     <section id="loader">
       <button id="playIt" type="button" class="nes-btn is-warning max">
@@ -135,7 +135,11 @@
               class="nes-input"
               placeholder="eg: https://zoom.us/i/1937...and so on"
             /><br />
-            <button type="button" class="invite_btn nes-btn is-warning">
+            <button
+              id="playVideo"
+              type="button"
+              class="invite_btn nes-btn is-warning"
+            >
               Invite Rick
             </button>
           </div>
@@ -169,10 +173,19 @@
       const playIt = document.getElementById("playIt");
       const loaderDiv = document.getElementById("loader");
 
+      const audio = new Audio("/audio.mp3");
       playIt.addEventListener("click", async () => {
-        const audio = await new Audio("/audio.mp3");
         await audio.play();
         loaderDiv.style.display = "none";
+      });
+
+      let videoPlay = document.getElementById("playVideo");
+      let video = document.getElementById("video");
+      let videD = document.getElementById("videD");
+      videoPlay.addEventListener("click", () => {
+        video.classList.add("fullScale");
+        audio.pause();
+        videD.play();
       });
     </script>
   </body>
