@@ -80,3 +80,17 @@ video {
   flex-direction: column;
   gap: 16px;
 }
+
+.moHide.left {
+  top: 0;
+}
+
+.moHide.right {
+  top: 0;
+}
+
+@media (max-width: 700px) {
+  .moHide {
+    display: none !important;
+  }
+}
